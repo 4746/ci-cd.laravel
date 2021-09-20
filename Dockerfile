@@ -38,8 +38,6 @@ RUN additionalPackages=" \
     " \
     && runDeps=" \
         libc-client2007e \
-        lib
-        1c2a \
         libfreetype6 \
         libicu57 \
         libjpeg62-turbo \
