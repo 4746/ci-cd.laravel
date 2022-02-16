@@ -3,6 +3,8 @@ FROM php:8.1.2-fpm
 ENV COMPOSER_ALLOW_SUPERUSER 1
 ENV COMPOSER_MEMORY_LIMIT=-1
 
+ENV PHPIZE_DEPS=''
+
 # Install dev dependencies
 RUN apk add --no-cache --virtual .build-deps \
     $PHPIZE_DEPS \
