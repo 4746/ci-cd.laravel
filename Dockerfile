@@ -60,8 +60,7 @@ ENV COMPOSER_ALLOW_SUPERUSER 1
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
 
-RUN composer global require "squizlabs/php_codesniffer=*" && composer global require laravel/envoy \
-    && composer global require deployer/recipes \
+RUN composer global require "squizlabs/php_codesniffer=*" \
     && curl -LO https://deployer.org/deployer.phar \
     && mv deployer.phar /usr/local/bin/dep \
     && chmod +x /usr/local/bin/dep
